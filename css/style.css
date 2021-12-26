@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --text-color: #1E1E1E;
+    --purple: #960796;
+    --yellow: #FFCC00;
+    --red: #DC3545;
+    --grey: #A8A8A8;
+    --white: #fff;
+}
+
+body{
+    font-family: var(--font-family);
+}
+.lable,
+.price,
+.reviews,
+.btn{
+    font-size: calc(var(--font-size) * 0.75);
+}
+.title{
+    font-size: calc(var(--font-size) * 0.88);
+}
+.content{
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+}
+.lable{
+    background-color: var(--purple);
+}
+.card:hover .content{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
+}
+.btn{
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background-color: var(--purple) !important;
+    color: var(--white);
+}
+.btn--more{
+    margin: 50px auto;
+}
+.btn--more:hover{
+    background-color: var(--yellow) !important;
+    color: var(--text-color);
+}
